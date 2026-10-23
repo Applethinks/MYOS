@@ -1,17 +1,17 @@
-## MYOS — Make Your Own Site
+# MYOS — Make Your Own Site
 
-# Helping ideas find their place online.
+## Helping ideas find their place online.
 
 MYOS is a growing, youth-led web development venture focused on helping small businesses, shops, restaurants, and individuals establish their presence online.
 
-# What We Do
+## What We Do
 
 - Business websites
 - Restaurant websites
 - Custom website projects
 - Interactive webpage-building demonstrations
 
-# Our Mission
+## Our Mission
 
 We want to make getting a website simpler and more approachable for people who don't know where to start.
 
