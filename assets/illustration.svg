@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" fill="none">
+  <rect x="70" y="35" width="380" height="270" rx="20" fill="#141a16" stroke="#344538" stroke-width="2"/>
+  <rect x="70" y="35" width="380" height="42" rx="20" fill="#202a22"/>
+  <path d="M70 57 Q70 35 92 35 H428 Q450 35 450 57 V77 H70 Z" fill="#202a22"/>
+  <circle cx="94" cy="56" r="5" fill="#ff716b"/>
+  <circle cx="112" cy="56" r="5" fill="#ffd166"/>
+  <circle cx="130" cy="56" r="5" fill="#8dfc5b"/>
+  <rect x="94" y="99" width="150" height="12" rx="6" fill="#8dfc5b"/>
+  <rect x="94" y="124" width="245" height="7" rx="3.5" fill="#647368"/>
+  <rect x="94" y="140" width="200" height="7" rx="3.5" fill="#647368"/>
+  <rect x="94" y="172" width="135" height="80" rx="10" fill="#202a22" stroke="#344538"/>
+  <rect x="243" y="172" width="183" height="80" rx="10" fill="#202a22" stroke="#344538"/>
+  <path d="M109 192 H189 M109 207 H174 M109 222 H195" stroke="#8dfc5b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M261 194 H405 M261 210 H384 M261 226 H397" stroke="#647368" stroke-width="5" stroke-linecap="round"/>
+  <rect x="185" y="274" width="150" height="45" rx="12" fill="#8dfc5b"/>
+  <path d="M210 296 L220 306 L239 286" stroke="#0b0d0c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="250" y="302" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#0b0d0c">YOUR WEBSITE</text>
+  <path d="M35 130 H59 M47 118 V142 M462 220 H486 M474 208 V232" stroke="#8dfc5b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="45" cy="260" r="5" fill="#8dfc5b"/>
+  <circle cx="477" cy="112" r="5" fill="#8dfc5b"/>
+</svg>
