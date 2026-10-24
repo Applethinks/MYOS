@@ -1,0 +1,449 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Choose a Template | MYOS</title>  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #242424;
+    }
+
+    .logo {
+      color: #39ff14;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .back-link {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: #39ff14;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px 45px;
+    }
+
+    .tag {
+      color: #39ff14;
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(32px, 7vw, 58px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+
+    h1 span {
+      color: #39ff14;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+.templates {
+max-width: 1100px;
+margin: 0 auto;
+padding: 25px 22px 80px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+gap: 24px;
+}
+
+.card {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.card:hover {
+  border-color: #39ff14;
+  transform: translateY(-5px);
+}
+
+.preview {
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #151515;
+  border-bottom: 1px solid #292929;
+  padding: 20px;
+}
+
+.mockup {
+  width: 100%;
+  max-width: 250px;
+  padding: 16px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #0a0a0a;
+}
+
+.mock-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+  font-size: 10px;
+}
+
+.mock-brand {
+  color: #39ff14;
+  font-weight: bold;
+}
+
+.mock-line {
+  height: 5px;
+  background: #3a3a3a;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+.mock-line.short {
+  width: 55%;
+}
+
+.mock-line.green {
+  background: #39ff14;
+  width: 35%;
+}
+
+.mock-blocks {
+  display: flex;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.mock-blocks div {
+  height: 35px;
+  flex: 1;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+.restaurant-preview {
+background: #21150f;
+}
+
+.restaurant-preview .mockup {
+  background: #1b100c;
+  border-color: #67452c;
+}
+
+.restaurant-preview .mock-brand {
+  color: #ffb86b;
+}
+
+.restaurant-preview .mock-line.green {
+  background: #ffb86b;
+}
+
+.shop-preview {
+  background: #111827;
+}
+
+.shop-preview .mock-brand {
+  color: #76a9ff;
+}
+
+.shop-preview .mock-line.green {
+  background: #76a9ff;
+}
+
+.custom-preview {
+  background: #17121f;
+}
+
+.custom-preview .mock-brand {
+  color: #d5a6ff;
+}
+
+.custom-preview .mock-line.green {
+  background: #d5a6ff;
+}
+
+.card-content {
+  padding: 23px;
+}
+
+.number {
+  color: #39ff14;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.description {
+  color: #aaa;
+  font-size: 14px;
+  min-height: 68px;
+}
+
+.features {
+  list-style: none;
+  margin: 18px 0 22px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.features li {
+  margin: 7px 0;
+}
+
+.features li::before {
+  content: "✓ ";
+  color: #39ff14;
+  font-weight: bold;
+}
+
+.choose-btn {
+  width: 100%;
+  border: 1px solid #39ff14;
+  background: transparent;
+  color: #39ff14;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.choose-btn:hover {
+  background: #39ff14;
+  color: #080808;
+}
+.note {
+max-width: 700px;
+margin: 0 auto 65px;
+padding: 22px;
+border: 1px solid #292929;
+border-radius: 10px;
+text-align: center;
+color: #aaa;
+font-size: 14px;
+}
+
+.note strong {
+  color: #39ff14;
+}
+
+footer {
+  border-top: 1px solid #242424;
+  padding: 25px 15px;
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+}
+
+footer span {
+  color: #39ff14;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 18px;
+  }
+
+  .hero {
+    padding-top: 55px;
+  }
+
+  .templates {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .description {
+    min-height: auto;
+  }
+}
+
+  </style>
+</head><body>  <header>
+    <a class="logo" href="index.html">MYOS<span>.</span></a>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </header>  <main>
+    <section class="hero">
+      <div class="tag">YOUR VISION. YOUR WEBSITE.</div>  <h1>Choose Your <span>Starting Point.</span></h1>
+
+  <p>
+    Explore our website template categories.
+    Choose the type of website you need, and we'll
+    help you build something that fits your vision.
+  </p>
+</section>
+
+<section class="templates">
+<article class="card">
+        <div class="preview restaurant-preview">
+          <div class="mockup">
+            <div class="mock-nav">
+              <span class="mock-brand">THE RESTAURANT</span>
+              <span>MENU</span>
+            </div>
+            <div class="mock-line short"></div>
+            <div class="mock-line"></div>
+            <div class="mock-line short"></div>
+            <div class="mock-line green"></div>
+            <div class="mock-blocks">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>    <div class="card-content">
+      <div class="number">TEMPLATE 01</div>
+      <h2>Restaurant</h2>
+      <p class="description">
+        A website concept for restaurants, cafés,
+        bakeries and food businesses.
+      </p>
+      <ul class="features">
+        <li>Menu and food highlights</li>
+        <li>Opening hours and location</li>
+        <li>Contact and reservation links</li>
+      </ul>
+      <button class="choose-btn" data-template="Restaurant">
+        Choose Restaurant
+      </button>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="preview shop-preview">
+      <div class="mockup">
+        <div class="mock-nav">
+          <span class="mock-brand">YOUR STORE</span>
+          <span>SHOP</span>
+        </div>
+        <div class="mock-line short"></div>
+        <div class="mock-line"></div>
+        <div class="mock-line green"></div>
+        <div class="mock-blocks">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <div class="number">TEMPLATE 02</div>
+      <h2>Shop</h2>
+      <p class="description">
+        A starting point for product showcases,
+        small businesses and online shops.
+      </p>
+      <ul class="features">
+        <li>Product showcase</li>
+        <li>Product categories</li>
+        <li>Contact or order links</li>
+      </ul>
+      <button class="choose-btn" data-template="Shop">
+        Choose Shop
+      </button>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="preview custom-preview">
+      <div class="mockup">
+        <div class="mock-nav">
+          <span class="mock-brand">YOUR BRAND</span>
+          <span>ABOUT</span>
+        </div>
+        <div class="mock-line"></div>
+        <div class="mock-line short"></div>
+        <div class="mock-line green"></div>
+        <div class="mock-blocks">
+          <div></div><div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <div class="number">TEMPLATE 03</div>
+      <h2>Custom</h2>
+      <p class="description">
+        A flexible concept for portfolios, personal
+        brands, services and unique ideas.
+      </p>
+      <ul class="features">
+        <li>Flexible layout</li>
+        <li>Custom colors and branding</li>
+        <li>Features tailored to your needs</li>
+      </ul>
+      <button class="choose-btn" data-template="Custom">
+        Choose Custom
+      </button>
+    </div>
+  </article>
+
+</section>
+
+<section class="note">
+  <strong>Have a different idea?</strong><br>
+  These categories are just starting points.
+  Tell MYOS what you need, and we can discuss a custom website.
+</section>
+
+  </main>  <footer>
+    Built with <span>MYOS</span> · Make Your Own Site
+  </footer>  <script>
+    document.querySelectorAll(".choose-btn").forEach(function(button) {
+      button.addEventListener("click", function() {
+        const template = button.dataset.template;
+
+        const subject = encodeURIComponent(
+          "MYOS Website Enquiry - " + template + " Template"
+        );
+
+        const body = encodeURIComponent(
+          "Hello MYOS!\n\n" +
+          "I'm interested in the " + template + " website template.\n\n" +
+          "Business or project name:\n" +
+          "Website idea:\n" +
+          "Features I need:\n\n" +
+          "Please let me know the next steps."
+        );
+
+        window.location.href =
+          "mailto:myos.webdev@gmail.com?subject=" +
+          subject + "&body=" + body;
+      });
+    });
+  </script></body>
+</html>
