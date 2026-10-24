@@ -2,33 +2,31 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Mobile navigation
+        // Mobile navigation
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
     if (menuToggle && navLinks) {
-
-        menuToggle.addEventListener("click", () => {
-            const isOpen =
-                menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("open");
 
             menuToggle.setAttribute(
                 "aria-expanded",
-                String(!isOpen)
+                String(isOpen)
             );
 
             menuToggle.setAttribute(
                 "aria-label",
-                isOpen ? "Open navigation menu" : "Close navigation menu"
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
             );
-
-            navLinks.classList.toggle("open", !isOpen);
         });
 
-        navLinks.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                
-       navLinks.classList.remove("open");         menuToggle.setAttribute("aria-expanded", "false");
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
                 menuToggle.setAttribute(
                     "aria-label",
                     "Open navigation menu"
