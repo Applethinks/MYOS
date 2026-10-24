@@ -1,4 +1,4 @@
-<div align="center">MYOS — Make Your Own Site
+<div align="center"># MYOS — Make Your Own Site
 
 Your Business. Your Website. Your Way.
 
