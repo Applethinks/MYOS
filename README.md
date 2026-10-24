@@ -1,10 +1,15 @@
-<div align="center"># MYOS — Make Your Own Site
+#<div align="center"> MYOS — Make Your Own Site
 
 Your Business. Your Website. Your Way.
 
 Building modern, responsive, and customized websites for businesses, brands, and creative ideas.
 
-"Visit MYOS" (https://applethinks.github.io/MYOS/) · "Explore Templates" (https://applethinks.github.io/MYOS/template.html) · "Contact Us" (mailto:myos.webdev@gmail.com)
+Visit MYOS (https://applethinks.github.io/MYOS/) 
+
+Explore Templates
+(https://applethinks.github.io/MYOS/template.html)
+
+Contact Us (mailto:myos.webdev@gmail.com)
 
 ---
 
@@ -12,13 +17,14 @@ Web Design · Responsive Development · Customization
 
 </div>About MYOS
 
-MYOS (Make Your Own Site) is a web development project focused on creating accessible, visually engaging, and responsive websites.
+## MYOS (Make Your Own Site) 
+is a web development project focused on creating accessible, visually engaging, and responsive websites.
 
 Our goal is to help businesses and individuals establish their online presence through websites tailored to their needs, style, and goals.
 
 From business websites to reusable website templates, MYOS aims to make getting started online simpler and more approachable.
 
-What We Offer
+## What We Offer
 
 - Business Websites — Websites designed to present a business professionally.
 - Reusable Templates — Starting points for different website categories.
@@ -28,7 +34,7 @@ What We Offer
 
 Project availability and features may vary depending on the website requirements.
 
-Website Templates
+## Website Templates
 
 MYOS is developing reusable website concepts that can be adapted for different customers.
 
@@ -39,7 +45,7 @@ Custom| Flexible layouts for portfolios, services, and other projects
 
 Explore the available templates on the "MYOS Template Picker" (https://applethinks.github.io/MYOS/template.html).
 
-Built With
+## Built With
 
 The project uses core web technologies:
 
@@ -48,7 +54,7 @@ The project uses core web technologies:
 - JavaScript — Interactive features and functionality
 - GitHub Pages — Website hosting and deployment
 
-Live Website
+## Live Website
 
 Visit the live MYOS website:
 
@@ -66,7 +72,7 @@ Our workflow focuses on keeping projects organized and practical.
 4. Test — Check the website's layout and functionality.
 5. Publish — Deploy the completed website using an appropriate hosting solution.
 
-Project Structure
+## Project Structure
 
 The main MYOS website is maintained separately from individual website templates.
 
@@ -78,7 +84,7 @@ MYOS/
 
 The structure above is illustrative; additional files may exist in the repository.
 
-Getting Started
+## Getting Started
 
 You can explore the live website directly without installing anything.
 
@@ -89,7 +95,7 @@ To explore or modify the source code:
 3. Open the HTML, CSS, and JavaScript files to inspect the implementation.
 4. Make changes in your own copy or development branch.
 
-Contact
+## Contact
 
 Have a website idea or want to discuss a project?
 
