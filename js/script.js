@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 isOpen ? "Open navigation menu" : "Close navigation menu"
             );
 
-            navLinks.classList.toggle("active", !isOpen);
+            navLinks.classList.toggle("open", !isOpen);
         });
 
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
-                navLinks.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
+                
+       navLinks.classList.remove("open");         menuToggle.setAttribute("aria-expanded", "false");
                 menuToggle.setAttribute(
                     "aria-label",
                     "Open navigation menu"
