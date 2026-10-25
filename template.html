@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
+  <meta name="description" content="Choose a website template with MYOS. Explore restaurant, shop, and custom website concepts.">
   <title>Choose a Template | MYOS</title>  <style>
     * {
       box-sizing: border-box;
@@ -70,233 +71,258 @@
       max-width: 540px;
       margin: 0 auto;
     }
-.templates {
-max-width: 1100px;
-margin: 0 auto;
-padding: 25px 22px 80px;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
-gap: 24px;
-}
 
-.card {
-  background: #101010;
-  border: 1px solid #292929;
-  border-radius: 14px;
-  overflow: hidden;
-  transition: border-color 0.25s, transform 0.25s;
-}
+    .templates {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 25px 22px 80px;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 270px), 1fr)
+      );
+      gap: 24px;
+    }
 
-.card:hover {
-  border-color: #39ff14;
-  transform: translateY(-5px);
-}
+    .card {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
 
-.preview {
-  height: 175px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #151515;
-  border-bottom: 1px solid #292929;
-  padding: 20px;
-}
+    .card:hover {
+      border-color: #39ff14;
+      transform: translateY(-5px);
+    }
 
-.mockup {
-  width: 100%;
-  max-width: 250px;
-  padding: 16px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  background: #0a0a0a;
-}
+    .preview {
+      height: 175px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #151515;
+      border-bottom: 1px solid #292929;
+      padding: 20px;
+    }
 
-.mock-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 17px;
-  font-size: 10px;
-}
+    .mockup {
+      width: 100%;
+      max-width: 250px;
+      padding: 16px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      background: #0a0a0a;
+    }
 
-.mock-brand {
-  color: #39ff14;
-  font-weight: bold;
-}
+    .mock-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 17px;
+      font-size: 10px;
+    }
 
-.mock-line {
-  height: 5px;
-  background: #3a3a3a;
-  border-radius: 5px;
-  margin: 8px 0;
-}
+    .mock-brand {
+      color: #39ff14;
+      font-weight: bold;
+    }
 
-.mock-line.short {
-  width: 55%;
-}
+    .mock-line {
+      height: 5px;
+      background: #3a3a3a;
+      border-radius: 5px;
+      margin: 8px 0;
+    }
 
-.mock-line.green {
-  background: #39ff14;
-  width: 35%;
-}
+    .mock-line.short {
+      width: 55%;
+    }
 
-.mock-blocks {
-  display: flex;
-  gap: 7px;
-  margin-top: 14px;
-}
+    .mock-line.green {
+      background: #39ff14;
+      width: 35%;
+    }
 
-.mock-blocks div {
-  height: 35px;
-  flex: 1;
-  background: #222;
-  border: 1px solid #333;
-  border-radius: 4px;
-}
-.restaurant-preview {
-background: #21150f;
-}
+    .mock-blocks {
+      display: flex;
+      gap: 7px;
+      margin-top: 14px;
+    }
 
-.restaurant-preview .mockup {
-  background: #1b100c;
-  border-color: #67452c;
-}
+    .mock-blocks div {
+      height: 35px;
+      flex: 1;
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
 
-.restaurant-preview .mock-brand {
-  color: #ffb86b;
-}
+    .restaurant-preview {
+      background: #21150f;
+    }
 
-.restaurant-preview .mock-line.green {
-  background: #ffb86b;
-}
+    .restaurant-preview .mockup {
+      background: #1b100c;
+      border-color: #67452c;
+    }
 
-.shop-preview {
-  background: #111827;
-}
+    .restaurant-preview .mock-brand {
+      color: #ffb86b;
+    }
 
-.shop-preview .mock-brand {
-  color: #76a9ff;
-}
+    .restaurant-preview .mock-line.green {
+      background: #ffb86b;
+    }
 
-.shop-preview .mock-line.green {
-  background: #76a9ff;
-}
+    .shop-preview {
+      background: #111827;
+    }
 
-.custom-preview {
-  background: #17121f;
-}
+    .shop-preview .mock-brand {
+      color: #76a9ff;
+    }
 
-.custom-preview .mock-brand {
-  color: #d5a6ff;
-}
+    .shop-preview .mock-line.green {
+      background: #76a9ff;
+    }
 
-.custom-preview .mock-line.green {
-  background: #d5a6ff;
-}
+    .custom-preview {
+      background: #17121f;
+    }
 
-.card-content {
-  padding: 23px;
-}
+    .custom-preview .mock-brand {
+      color: #d5a6ff;
+    }
 
-.number {
-  color: #39ff14;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
+    .custom-preview .mock-line.green {
+      background: #d5a6ff;
+    }
 
-h2 {
-  font-size: 23px;
-  margin: 8px 0;
-}
+    .card-content {
+      padding: 23px;
+    }
 
-.description {
-  color: #aaa;
-  font-size: 14px;
-  min-height: 68px;
-}
+    .number {
+      color: #39ff14;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
 
-.features {
-  list-style: none;
-  margin: 18px 0 22px;
-  color: #ccc;
-  font-size: 13px;
-}
+    h2 {
+      font-size: 23px;
+      margin: 8px 0;
+    }
 
-.features li {
-  margin: 7px 0;
-}
+    .description {
+      color: #aaa;
+      font-size: 14px;
+      min-height: 68px;
+    }
 
-.features li::before {
-  content: "✓ ";
-  color: #39ff14;
-  font-weight: bold;
-}
+    .features {
+      list-style: none;
+      margin: 18px 0 22px;
+      color: #ccc;
+      font-size: 13px;
+    }
 
-.choose-btn {
-  width: 100%;
-  border: 1px solid #39ff14;
-  background: transparent;
-  color: #39ff14;
-  padding: 12px;
-  border-radius: 7px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
+    .features li {
+      margin: 7px 0;
+    }
 
-.choose-btn:hover {
-  background: #39ff14;
-  color: #080808;
-}
-.note {
-max-width: 700px;
-margin: 0 auto 65px;
-padding: 22px;
-border: 1px solid #292929;
-border-radius: 10px;
-text-align: center;
-color: #aaa;
-font-size: 14px;
-}
+    .features li::before {
+      content: "✓ ";
+      color: #39ff14;
+      font-weight: bold;
+    }
 
-.note strong {
-  color: #39ff14;
-}
+    .choose-btn {
+      display: block;
+      width: 100%;
+      border: 1px solid #39ff14;
+      background: transparent;
+      color: #39ff14;
+      padding: 12px;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
 
-footer {
-  border-top: 1px solid #242424;
-  padding: 25px 15px;
-  text-align: center;
-  color: #777;
-  font-size: 13px;
-}
+    .choose-btn:hover {
+      background: #39ff14;
+      color: #080808;
+    }
 
-footer span {
-  color: #39ff14;
-}
+    .demo-btn {
+      margin-bottom: 10px;
+      border-color: #f5f5f5;
+      color: #f5f5f5;
+    }
 
-@media (max-width: 500px) {
-  header {
-    padding: 18px;
-  }
+    .demo-btn:hover {
+      background: #f5f5f5;
+      color: #080808;
+    }
 
-  .hero {
-    padding-top: 55px;
-  }
+    .note {
+      max-width: 700px;
+      margin: 0 auto 65px;
+      padding: 22px;
+      border: 1px solid #292929;
+      border-radius: 10px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
 
-  .templates {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
+    .note strong {
+      color: #39ff14;
+    }
 
-  .description {
-    min-height: auto;
-  }
-}
+    footer {
+      border-top: 1px solid #242424;
+      padding: 25px 15px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
 
-  </style>
-</head><body>  <header>
+    footer span {
+      color: #39ff14;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        padding: 18px;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .templates {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+
+      .description {
+        min-height: auto;
+      }
+    }
+
+    @media (hover: none) {
+      .card:hover {
+        transform: none;
+      }
+    }
+  </style></head><body>  <header>
     <a class="logo" href="index.html">MYOS<span>.</span></a>
     <a class="back-link" href="index.html">← Back to Home</a>
   </header>  <main>
@@ -311,49 +337,64 @@ footer span {
 </section>
 
 <section class="templates">
-<article class="card">
-        <div class="preview restaurant-preview">
-          <div class="mockup">
-            <div class="mock-nav">
-              <span class="mock-brand">THE RESTAURANT</span>
-              <span>MENU</span>
-            </div>
-            <div class="mock-line short"></div>
-            <div class="mock-line"></div>
-            <div class="mock-line short"></div>
-            <div class="mock-line green"></div>
-            <div class="mock-blocks">
-              <div></div><div></div><div></div>
-            </div>
-          </div>
-        </div>    <div class="card-content">
+
+  <!-- TEMPLATE 01: RESTAURANT -->
+  <article class="card">
+    <div class="preview restaurant-preview">
+      <div class="mockup">
+        <div class="mock-nav">
+          <span class="mock-brand">THE RESTAURANT</span>
+          <span>MENU</span>
+        </div>
+
+        <div class="mock-line short"></div>
+        <div class="mock-line"></div>
+        <div class="mock-line short"></div>
+        <div class="mock-line green"></div>
+
+        <div class="mock-blocks">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
       <div class="number">TEMPLATE 01</div>
       <h2>Restaurant</h2>
+
       <p class="description">
         A website concept for restaurants, cafés,
         bakeries and food businesses.
       </p>
+
       <ul class="features">
         <li>Menu and food highlights</li>
         <li>Opening hours and location</li>
         <li>Contact and reservation links</li>
       </ul>
-  
-    <button class="choose-btn" 
-<a href="https://applethinks.github.io/Resturant-Demo/"
-    target="_blank"
-    rel="noopener noreferrer"
-    style="display:block; text-align:center; text-decoration:none; margin-bottom:10px;"
->
-    Open Restaurant Demo
-</a>
 
-<button class="choose-btn" data-template="Restaurant">
-    Choose Restaurant
-</button>
+      <a
+        class="choose-btn demo-btn"
+        href="https://applethinks.github.io/Resturant-Demo/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Restaurant Demo ↗
+      </a>
+
+      <button
+        type="button"
+        class="choose-btn"
+        data-template="Restaurant"
+      >
+        Choose Restaurant
+      </button>
     </div>
   </article>
 
+  <!-- TEMPLATE 02: SHOP -->
   <article class="card">
     <div class="preview shop-preview">
       <div class="mockup">
@@ -361,11 +402,15 @@ footer span {
           <span class="mock-brand">YOUR STORE</span>
           <span>SHOP</span>
         </div>
+
         <div class="mock-line short"></div>
         <div class="mock-line"></div>
         <div class="mock-line green"></div>
+
         <div class="mock-blocks">
-          <div></div><div></div><div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
@@ -373,21 +418,29 @@ footer span {
     <div class="card-content">
       <div class="number">TEMPLATE 02</div>
       <h2>Shop</h2>
+
       <p class="description">
         A starting point for product showcases,
         small businesses and online shops.
       </p>
+
       <ul class="features">
         <li>Product showcase</li>
         <li>Product categories</li>
         <li>Contact or order links</li>
       </ul>
-      <button class="choose-btn" data-template="Shop">
+
+      <button
+        type="button"
+        class="choose-btn"
+        data-template="Shop"
+      >
         Choose Shop
       </button>
     </div>
   </article>
 
+  <!-- TEMPLATE 03: CUSTOM -->
   <article class="card">
     <div class="preview custom-preview">
       <div class="mockup">
@@ -395,11 +448,14 @@ footer span {
           <span class="mock-brand">YOUR BRAND</span>
           <span>ABOUT</span>
         </div>
+
         <div class="mock-line"></div>
         <div class="mock-line short"></div>
         <div class="mock-line green"></div>
+
         <div class="mock-blocks">
-          <div></div><div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
@@ -407,16 +463,23 @@ footer span {
     <div class="card-content">
       <div class="number">TEMPLATE 03</div>
       <h2>Custom</h2>
+
       <p class="description">
         A flexible concept for portfolios, personal
         brands, services and unique ideas.
       </p>
+
       <ul class="features">
         <li>Flexible layout</li>
         <li>Custom colors and branding</li>
         <li>Features tailored to your needs</li>
       </ul>
-      <button class="choose-btn" data-template="Custom">
+
+      <button
+        type="button"
+        class="choose-btn"
+        data-template="Custom"
+      >
         Choose Custom
       </button>
     </div>
@@ -433,7 +496,7 @@ footer span {
   </main>  <footer>
     Built with <span>MYOS</span> · Make Your Own Site
   </footer>  <script>
-    document.querySelectorAll(".choose-btn").forEach(function(button) {
+    document.querySelectorAll("button.choose-btn").forEach(function(button) {
       button.addEventListener("click", function() {
         const template = button.dataset.template;
 
