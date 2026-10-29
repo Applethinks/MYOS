@@ -1781,3 +1781,19 @@ animation-iteration-count: 1 !important;
 transition-duration: 0.01ms !important;
 }
 }
+
+/* Remove the default mobile tap highlight */
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom button press animation */
+button,
+a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:active,
+a:active {
+    transform: scale(0.97);
+}
