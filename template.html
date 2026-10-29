@@ -3,8 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="Choose a website template with MYOS. Explore restaurant, shop, and custom website concepts.">
-  <title>Choose a Template | MYOS</title>  <style>
+  <meta name="description" content="Choose a website template with MYOS. Explore restaurant, shop, and custom website concepts.">  <title>Choose a Template | MYOS</title>  <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -32,6 +31,10 @@
       font-weight: 900;
       letter-spacing: 2px;
       text-decoration: none;
+    }
+
+    .logo span {
+      color: #f5f5f5;
     }
 
     .back-link {
@@ -159,6 +162,8 @@
       border-radius: 4px;
     }
 
+    /* Restaurant preview */
+
     .restaurant-preview {
       background: #21150f;
     }
@@ -176,6 +181,8 @@
       background: #ffb86b;
     }
 
+    /* Shop preview */
+
     .shop-preview {
       background: #111827;
     }
@@ -187,6 +194,8 @@
     .shop-preview .mock-line.green {
       background: #76a9ff;
     }
+
+    /* Custom preview */
 
     .custom-preview {
       background: #17121f;
@@ -325,9 +334,10 @@
   </style></head><body>  <header>
     <a class="logo" href="index.html">MYOS<span>.</span></a>
     <a class="back-link" href="index.html">← Back to Home</a>
-  </header>  <main>
-    <section class="hero">
-      <div class="tag">YOUR VISION. YOUR WEBSITE.</div>  <h1>Choose Your <span>Starting Point.</span></h1>
+  </header>  <main><section class="hero">
+  <div class="tag">YOUR VISION. YOUR WEBSITE.</div>
+
+  <h1>Choose Your <span>Starting Point.</span></h1>
 
   <p>
     Explore our website template categories.
@@ -339,9 +349,12 @@
 <section class="templates">
 
   <!-- TEMPLATE 01: RESTAURANT -->
+
   <article class="card">
+
     <div class="preview restaurant-preview">
       <div class="mockup">
+
         <div class="mock-nav">
           <span class="mock-brand">THE RESTAURANT</span>
           <span>MENU</span>
@@ -357,10 +370,12 @@
           <div></div>
           <div></div>
         </div>
+
       </div>
     </div>
 
     <div class="card-content">
+
       <div class="number">TEMPLATE 01</div>
       <h2>Restaurant</h2>
 
@@ -391,13 +406,17 @@
       >
         Choose Restaurant
       </button>
+
     </div>
   </article>
 
   <!-- TEMPLATE 02: SHOP -->
+
   <article class="card">
+
     <div class="preview shop-preview">
       <div class="mockup">
+
         <div class="mock-nav">
           <span class="mock-brand">YOUR STORE</span>
           <span>SHOP</span>
@@ -412,10 +431,12 @@
           <div></div>
           <div></div>
         </div>
+
       </div>
     </div>
 
     <div class="card-content">
+
       <div class="number">TEMPLATE 02</div>
       <h2>Shop</h2>
 
@@ -430,6 +451,15 @@
         <li>Contact or order links</li>
       </ul>
 
+      <a
+        class="choose-btn demo-btn"
+        href="https://applethinks.github.io/myos-shop-demo/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Shop Demo ↗
+      </a>
+
       <button
         type="button"
         class="choose-btn"
@@ -437,13 +467,17 @@
       >
         Choose Shop
       </button>
+
     </div>
   </article>
 
   <!-- TEMPLATE 03: CUSTOM -->
+
   <article class="card">
+
     <div class="preview custom-preview">
       <div class="mockup">
+
         <div class="mock-nav">
           <span class="mock-brand">YOUR BRAND</span>
           <span>ABOUT</span>
@@ -457,10 +491,12 @@
           <div></div>
           <div></div>
         </div>
+
       </div>
     </div>
 
     <div class="card-content">
+
       <div class="number">TEMPLATE 03</div>
       <h2>Custom</h2>
 
@@ -475,6 +511,15 @@
         <li>Features tailored to your needs</li>
       </ul>
 
+      <a
+        class="choose-btn demo-btn"
+        href="https://applethinks.github.io/OverAges/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Custom Demo ↗
+      </a>
+
       <button
         type="button"
         class="choose-btn"
@@ -482,13 +527,15 @@
       >
         Choose Custom
       </button>
+
     </div>
   </article>
 
 </section>
 
 <section class="note">
-  <strong>Have a different idea?</strong><br>
+  <strong>Have a different idea?</strong>
+  <br>
   These categories are just starting points.
   Tell MYOS what you need, and we can discuss a custom website.
 </section>
@@ -497,7 +544,9 @@
     Built with <span>MYOS</span> · Make Your Own Site
   </footer>  <script>
     document.querySelectorAll("button.choose-btn").forEach(function(button) {
+
       button.addEventListener("click", function() {
+
         const template = button.dataset.template;
 
         const subject = encodeURIComponent(
@@ -516,7 +565,9 @@
         window.location.href =
           "mailto:myos.webdev@gmail.com?subject=" +
           subject + "&body=" + body;
+
       });
+
     });
   </script></body>
-</html>
+</html></html>
