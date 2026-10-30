@@ -1,6 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0b0d0c"/>
-  <path d="M13 47 V17 L32 36 L51 17 V47"
-        fill="none" stroke="#8dfc5b" stroke-width="6"
-        stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1000">
+
+  <rect width="1000" height="1000" fill="#050505"/>
+
+  <g fill="#72F044">
+
+    <!-- Main M-shaped emblem -->
+    <path d="
+      M 275,245
+      L 500,410
+      L 725,245
+      L 725,345
+      L 500,505
+      L 275,345
+      Z"/>
+
+    <!-- Left side of the emblem -->
+    <path d="
+      M 275,375
+      L 405,470
+      L 405,685
+      L 275,605
+      Z"/>
+
+    <!-- Right side of the emblem -->
+    <path d="
+      M 725,375
+      L 595,470
+      L 595,685
+      L 725,605
+      Z"/>
+
+  </g>
+
+  <!-- Left circuit symbol -->
+  <g fill="none"
+     stroke="#050505"
+     stroke-width="12"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <path d="M 355,485 V 570 L 405,610"/>
+
+    <!-- Right circuit symbol -->
+    <path d="M 645,485 V 570 L 595,610"/>
+
+  </g>
+
+  <g fill="#050505">
+    <circle cx="355" cy="475" r="16"/>
+    <circle cx="645" cy="475" r="16"/>
+  </g>
+
 </svg>
